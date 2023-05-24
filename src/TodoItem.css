@@ -1,0 +1,63 @@
+
+.TodoItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: auto;
+    padding: 10px 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    list-style: none;
+}
+
+.TodoItem .task-container .TodoItem-p{
+    text-align: justify;
+    word-break: break-all;
+    margin: 0;
+}
+
+.TodoItem .task-container .TodoItem-p--completed{
+    text-decoration: line-through;
+}
+
+.TodoItem .task-container{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.TodoItem .task-container .Circle-check {
+    display: flex;
+    border: 2px solid rgb(58, 157, 255);;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.TodoItem .task-container .Icon-check:hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.TodoItem .task-container .Circle-check .Icon-check--active{
+    display: flex;
+}
+
+
+.TodoItem .task-container .Icon-check{
+    display: none;
+    font-size: 2.3rem;
+}
+
+.TodoItem .Icon-delete{
+    font-size: 2.3rem;
+    cursor: pointer;
+}
+
+.TodoItem .Icon-delete:hover {
+    color: #ff0000;
+}
+

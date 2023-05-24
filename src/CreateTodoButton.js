@@ -1,7 +1,13 @@
+import './CreateTodoButton.css'
+
 function CreateTodoButton() {
     return (
-        <button>
-            <span class="material-symbols-outlined">
+        <button className='CreateTodoButton'
+        onClick={(event) => {
+            console.log('Click');
+            console.log(event.target);
+        }}>
+            <span className="material-symbols-outlined">
             add
             </span>
         </button>

@@ -1,0 +1,29 @@
+.search-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    
+}
+
+.search-container .TodoSearch {
+    width: 300px;
+    padding: 9px 16px;
+    border-radius: 20px;
+    border: 1px solid #b4b7bb;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.search-container .TodoSearch:focus {
+    outline-color: rgb(58, 157, 255);
+}
+
+.search-container .search-icon{
+    position: absolute;
+    top: 9px;
+    right: 6px;
+    font-size: 2rem;
+    color: #b4b7bb;
+}
+
