@@ -35,11 +35,11 @@
     cursor: pointer;
 }
 
-.TodoItem .task-container .Icon-check:hover{
+.TodoItem .task-container .Circle-check:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: black;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .TodoItem .task-container .Circle-check .Icon-check--active{

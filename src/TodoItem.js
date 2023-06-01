@@ -1,11 +1,17 @@
 import './TodoItem.css'
 
-function TodoItem({text, completed}) {
+function TodoItem({text, completed, onComplete, onDelete}) {
     return (
       <li className='TodoItem'>
         <div className='task-container'>
-            <div className='Circle-check'> 
-              <span className={`Icon Icon-check material-symbols-outlined ${completed && 'Icon-check--active'}`}>
+            <div 
+              className='Circle-check'
+              onClick={onComplete}
+            > 
+              <span 
+                className={`Icon Icon-check material-symbols-outlined ${completed && 'Icon-check--active'}`}
+                
+              >
                 check
               </span>
             </div>
@@ -13,7 +19,10 @@ function TodoItem({text, completed}) {
             {text}
           </p>
         </div>
-          <span className="Icon Icon-delete material-symbols-outlined">
+          <span 
+            className="Icon Icon-delete material-symbols-outlined"
+            onClick={onDelete}
+          >
             close
           </span>
       </li>
