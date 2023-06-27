@@ -1,0 +1,56 @@
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    max-width: 300px;
+    gap: 20px;
+}
+
+form label {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+textarea {
+    width: auto;
+    max-width: 200px;
+    height: auto;
+    max-height: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+textarea:focus {
+    outline: 1px solid #5a96fd;
+}
+
+.TodoForm-buttonContainer{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.TodoForm-buttonContainer button{
+    width: 100px;
+    height: 40px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+.TodoForm-buttonContainer .TodoForm-button--add{
+    background-color: #5a96fd;
+    color: white;
+}
+.TodoForm-buttonContainer .TodoForm-button--add:hover{
+    background-color: #3f83f8;
+}
+
+.TodoForm-buttonContainer button:hover {
+    background-color: #5a96fd;
+}

@@ -10,7 +10,6 @@ function TodoItem({text, completed, onComplete, onDelete}) {
             > 
               <span 
                 className={`Icon Icon-check material-symbols-outlined ${completed && 'Icon-check--active'}`}
-                
               >
                 check
               </span>

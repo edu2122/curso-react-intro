@@ -8,6 +8,7 @@
     cursor: pointer;
     border-radius: 10px;
     background-color: rgb(58, 157, 255);
+    z-index: 1;
 }
 
 .CreateTodoButton:hover {
